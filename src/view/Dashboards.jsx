@@ -1,9 +1,10 @@
 import '../assets/scss/style.scss'
+import Navbar from '../components/Navbar';
 
 function Dashboards() {
   return (
     <div className="c-dashboards__wrapper">
-      <h1> This the dashboards </h1>
+      <Navbar />
     </div>
   );
 }

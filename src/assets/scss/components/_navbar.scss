@@ -22,12 +22,22 @@
       background: #F4F4F4;
       border-radius: 8px;
       margin: 0px 92px;
+      margin-right: 478px;
     }
     &-act-user{
+      display: flex;
       &-img{
         width: 40px;
         height: 40px;
-        
+      }
+      &-info{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        width: 170px;
+        span{
+          text-align: left;
+        }
       }
     }
   }
@@ -35,7 +45,7 @@
     &-notif{
       width: 20px;
       height: 20px;
-      margin: 10px 22px 10px 478px;
+      margin: 10px 22px 10px 0px;
     }
   }
 }

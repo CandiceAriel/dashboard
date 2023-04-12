@@ -1,4 +1,5 @@
-
+import '../assets/scss/style.scss';
+import '../components/Navbar'
 
 function Home() {
   return (
