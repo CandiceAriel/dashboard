@@ -12,16 +12,19 @@ import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
 import avatar from '../images/avatar.jpg';
 import avatar2 from '../images/avatar2.jpg';
-import avatar3 from './images/avatar3.png';
-import avatar4 from './images/avatar4.jpg';
-import product1 from './images/product1.jpg';
-import product2 from './images/product2.jpg';
-import product3 from './images/product3.jpg';
-import product4 from './images/product4.jpg';
-import product5 from './images/product5.jpg';
-import product6 from './images/product6.jpg';
-import product7 from './images/product7.jpg';
-import product8 from './images/product8.jpg';
+import avatar3 from '../images/avatar3.png';
+import avatar4 from '../images/avatar4.jpg';
+import product1 from '../images/product1.jpg';
+import product2 from '../images/product2.jpg';
+import product3 from '../images/product3.jpg';
+import product4 from '../images/product4.jpg';
+import product5 from '../images/product5.jpg';
+import product6 from '../images/product6.jpg';
+import product7 from '../images/product7.jpg';
+import product8 from '../images/product8.jpg';
+
+//add-on
+import dashboardicon from '../images/dashboard.svg'
 
 export const gridOrderImage = (props) => (
   <div>
@@ -475,7 +478,7 @@ export const links = [
     links: [
       {
         name: 'ecommerce',
-        icon: <FiShoppingBag />,
+        icon: <img src={dashboardicon} alt=''/>,
       },
     ],
   },

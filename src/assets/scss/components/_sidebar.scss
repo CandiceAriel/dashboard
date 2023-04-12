@@ -1,0 +1,25 @@
+.c-sidebar{
+  &__wrapper{
+    width: 250px;
+    background: #FCFCFC;
+    height: 100vh;
+    padding: 16px;
+
+  }
+  &__item{
+    border-radius: 12px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    &-sub{
+      height: 56px;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .c-sidebar{
+  }
+}
