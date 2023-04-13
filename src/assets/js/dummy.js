@@ -21,10 +21,7 @@ import product4 from '../images/product4.jpg';
 import product5 from '../images/product5.jpg';
 import product6 from '../images/product6.jpg';
 import product7 from '../images/product7.jpg';
-import product8 from '../images/product8.jpg';
-
-//add-on
-import dashboardicon from '../images/dashboard.svg'
+import product8 from './../images/product8.jpg';
 
 export const gridOrderImage = (props) => (
   <div>
@@ -478,7 +475,7 @@ export const links = [
     links: [
       {
         name: 'ecommerce',
-        icon: <img src={dashboardicon} alt=''/>,
+        icon: <FiShoppingBag />,
       },
     ],
   },

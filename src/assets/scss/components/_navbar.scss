@@ -3,27 +3,17 @@
     padding: 20px;
     display: flex;
     background: #FCFCFC;
+    width: 1621px;
+    float: right;
   }
   &__content{
-    &-logo{
-      display: flex;
-      img{
-        width: 35px;
-        height: 39px;
-        margin-right: 12px;
-      }
-      &-text{
-        @include font( 25px, 34.5px, 700, #11142D)
-      }
-    }
     &-search{
       width: 405px;
       height: 38px;
-      /* Bg color */
       background: #F4F4F4;
       border-radius: 8px;
-      margin: 0px 92px;
-      margin-right: 1000px;
+      margin-left: 20px;
+      margin-right: 934px;
     }
     &-act-user{
       display: flex;
@@ -38,6 +28,9 @@
         width: 170px;
         span{
           text-align: left;
+        }
+        &-name{
+          font-weight: 700;
         }
       }
     }

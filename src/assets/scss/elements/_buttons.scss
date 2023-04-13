@@ -9,7 +9,7 @@
     &_active{
       /* Primary color */
       background-color: #475BE8!important;
-      @include font( 16px, 22px, 700, #FCFCFC)
+      @include font( 16px, 22px, 700, #FCFCFC!important);
     }
   }
 }
