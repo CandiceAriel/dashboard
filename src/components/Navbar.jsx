@@ -1,7 +1,10 @@
+import React from "react";
+
 //import assets
 import '../assets/scss/style.scss';
 import bellic from '../assets/images/Union.svg';
 import actuserimg from '../assets/images/active-user.svg';
+
 
 function Navbar() {
   return (

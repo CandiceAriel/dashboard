@@ -5,6 +5,7 @@ import './assets/scss/style.scss';
 
 //import component
 import Dashboards from './view/Dashboards';
+import Ecommerce from './view/Ecommerce';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <div>
           <Routes>
             <Route path='/' element={<Dashboards />}/>
+            <Route path='/ecommerce' element={<Ecommerce />}/>
           </Routes>
         </div>
       </BrowserRouter>

@@ -1,0 +1,17 @@
+.c-base{
+  &__wrapper{
+    &_left{
+      width: 282px;
+      float: left;
+    }
+    &_right{
+      width: 1637px;
+    }
+  }
+  &__content{
+    &_right{
+      margin-top: 104px;
+      margin-left: 40px;
+    }
+  }
+}

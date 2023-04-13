@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 
 import { links } from "../assets/js/dummy";
@@ -26,7 +26,7 @@ function Sidebar() {
           </div>
           {item.links.map((link) => (
             <NavLink
-              // to={`/${link.name}`}
+              to={`/${link.name}`}
               key={link.name}
               onClick={() => navigate(link.name)}
               className={`c-sidebar__item-sub ${active === link.name ? 'c-sidebar__item-sub_active' : ''}`}

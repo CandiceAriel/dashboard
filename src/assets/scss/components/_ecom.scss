@@ -1,0 +1,13 @@
+.c-ecom{
+  &__wrapper{
+    display: flex;
+  }
+  &__content{
+    background-color: white;
+  }
+}
+
+@media (max-width: 1440px) {
+  .c-ecom{
+  }
+}
