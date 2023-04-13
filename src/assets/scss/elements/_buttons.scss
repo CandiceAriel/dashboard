@@ -1,0 +1,15 @@
+.e-btn{
+  &__primary{
+    border-radius: 12px;
+    background-color: #FCFCFC;
+    width: 204px;
+    padding: 16px 23px;
+    @include font( 16px, 22px, 700, #808191);
+    cursor: pointer;
+    &_active{
+      /* Primary color */
+      background-color: #475BE8!important;
+      @include font( 16px, 22px, 700, #FCFCFC)
+    }
+  }
+}
