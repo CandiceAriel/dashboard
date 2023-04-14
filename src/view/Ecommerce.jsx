@@ -23,8 +23,8 @@ function Ecommerce() {
             <div className='c-ecom__content c-ecom__hero-info'>
               <p className='c-ecom__content-hero c-ecom__hero-info-title c-base__text_bold'>Earnings</p>
               <p className='c-ecom__content-hero c-ecom__hero-info-amount c-ecom__text_normal'>$63,448.78</p>
-              <div className='e-btn__sec'>
-
+              <div className='e-btn e-btn__sec e-btn__sec_small c-ecom__hero-btn'>
+                <span className='c-base__text_bold'>Download</span>
               </div>
             </div>
           </div>

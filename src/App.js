@@ -6,18 +6,12 @@ import './assets/scss/style.scss';
 //import component
 import Dashboards from './view/Dashboards';
 import Ecommerce from './view/Ecommerce';
+import { PageRoutes } from './routes/routes';
 
 function App() {
   return (
     <div className='App'>
-      <BrowserRouter>
-        <div>
-          <Routes>
-            <Route path='/' element={<Dashboards />}/>
-            <Route path='/ecommerce' element={<Ecommerce />}/>
-          </Routes>
-        </div>
-      </BrowserRouter>
+      <PageRoutes />
     </div>
   );
 }

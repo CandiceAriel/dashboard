@@ -1,47 +1,45 @@
-.c-base{
-  &__wrapper{
+.c-base {
+  &__wrapper {
     display: flex;
-    &_left{
-      width: 282px;
+    &_left {
+      width: 20%;
       float: left;
     }
-    &_right{
-      width: 1637px;
+    &_right {
+      width: 80%;
       float: right;
     }
   }
-  &__content{
-    &_right{
-      margin-left: 40px;
-      margin-right: 40px;
+  &__content {
+    &_right {
+      padding: 40px 20px;
     }
   }
-  &__text{
-    &_bold{
+  &__text {
+    &_bold {
       font-weight: 700;
     }
   }
 }
 
-@media (max-width: 1440px) {
-  .c-base{
-    &__wrapper{
+@media screen and (max-width : 1440px) {
+  .c-base {
+    &__wrapper {
       display: flex;
-      &_left{
+      &_left {
         width: 20%;
         float: left;
       }
-      &_right{
+      &_right {
         width: 80%;
         float: right;
       }
     }
-    &__content{
-      &_right{
-        width: 1077px;
+    &__content {
+      &_right {
+        width: 1118px;
         float: right;
       }
     }
   }
-
 }
