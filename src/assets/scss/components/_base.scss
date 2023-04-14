@@ -1,17 +1,47 @@
 .c-base{
   &__wrapper{
+    display: flex;
     &_left{
       width: 282px;
       float: left;
     }
     &_right{
       width: 1637px;
+      float: right;
     }
   }
   &__content{
     &_right{
-      margin-top: 104px;
       margin-left: 40px;
+      margin-right: 40px;
     }
   }
+  &__text{
+    &_bold{
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .c-base{
+    &__wrapper{
+      display: flex;
+      &_left{
+        width: 20%;
+        float: left;
+      }
+      &_right{
+        width: 80%;
+        float: right;
+      }
+    }
+    &__content{
+      &_right{
+        width: 1077px;
+        float: right;
+      }
+    }
+  }
+
 }

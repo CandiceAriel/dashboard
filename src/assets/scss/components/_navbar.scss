@@ -22,9 +22,10 @@
       }
       &-info{
         display: flex;
-        flex-direction: column;
         margin-left: 10px;
         width: 170px;
+        flex-direction: column;
+        justify-content: center;
         span{
           text-align: left;
         }
@@ -48,6 +49,7 @@
     &__wrapper{
       padding: 20px;
       display: flex;
+      width: 1118px;
     }
     &__content{
       &-logo{
@@ -67,7 +69,6 @@
         /* Bg color */
         background: #F4F4F4;
         border-radius: 8px;
-        margin: 0px 92px;
         margin-right: 478px;
       }
       &-act-user{
@@ -78,9 +79,10 @@
         }
         &-info{
           display: flex;
-          flex-direction: column;
           margin-left: 10px;
           width: 170px;
+          flex-direction: column;
+          justify-content: center;
           span{
             text-align: left;
           }

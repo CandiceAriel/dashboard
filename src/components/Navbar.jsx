@@ -14,8 +14,7 @@ function Navbar() {
         <img  className='c-navbar__icon-notif' src={bellic} alt=''/>
         <img  className='c-navbar__content-act-user-img' src={actuserimg} alt=''/>
         <div className='c-navbar__content-act-user-info'>
-          <span className='c-navbar__content-act-user-info-name'>Hawkins Maru</span>
-          <span>Company Manager</span>
+          <span className='c-navbar__content-act-user-info-name'>Hi, Hawkins Maru</span>
         </div>
       </div>
     </div>

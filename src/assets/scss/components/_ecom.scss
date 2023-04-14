@@ -4,10 +4,45 @@
   }
   &__content{
     background-color: white;
+    &-hero{
+      background-color: transparent;
+    }
+  }
+  &__hero{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 11rem;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    padding-top: 2.5rem;
+    margin: 0.75rem;
+    &-info{
+      background-color: transparent;
+      &-title{
+        color: rgb(156 163 175);
+      }
+      &-amount{
+        font-size: 24px;
+        line-height: 32px;
+      }
+      p{
+        margin: 0px;
+      }
+    }
   }
 }
 
 @media (max-width: 1440px) {
   .c-ecom{
+    &__hero{
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 11rem;
+      border-radius: 0.75rem;
+      padding: 2rem;
+      padding-top: 2.5rem;
+      margin: 0.75rem;
+      background-position: center right;
+    }
   }
 }
