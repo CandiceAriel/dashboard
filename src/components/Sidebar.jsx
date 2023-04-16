@@ -2,6 +2,7 @@ import React, {useState,useEffect} from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 import { links } from "../assets/js/dummy";
+import { menus } from "../assets/js/data";
 import logo from '../assets/images/logo-yariga.svg';
 
 function Sidebar() {
@@ -30,10 +31,10 @@ function Sidebar() {
   return (
     <div className='c-sidebar__wrapper'>
       <div className='c-sidebar__logo'><img src={logo} alt=''/><span className='c-sidebar__logo-text'>Yariga</span></div>
-      {links.map((item) => (
+      {menus.map((item) => (
         <div className='c-sidebar__item' key={item.title}>
           <div 
-            onClick={() => navigate(links)}
+            onClick={() => navigate(menus)}
             className='c-sidebar__item'
           >
             {item.title}
