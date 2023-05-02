@@ -3,13 +3,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 //import component
 import Dashboards from '../view/Dashboards';
-import Ecommerce from '../view/Ecommerce';
+import Kanban from '../view/Kanban';
 
 export const PageRoutes = () => {
   return (
     <Routes>
-      <Route path='/dashboard' element={<Dashboards />} />
-      <Route path='/' element={<Ecommerce />} />
+      <Route path='/' element={<Dashboards />} />
+      <Route path='/kanban' element={<Kanban />} />
     </Routes>
   )
 }

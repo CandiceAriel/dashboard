@@ -27,14 +27,20 @@
       @include font( 25px, 34.5px, 700, #11142D)
     }
   }
-  &__item{
-    border-radius: 12px;
+  &__menu{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     color: #808191;
+    text-decoration: none;
     margin-bottom: 5px;
+    border-radius: 12px;
+    padding: 15px 20px;
+    width: 200px;
+    &:hover{
+      background-color: rgb(247 247 247 / 1);
+    }
     &-sub{
       text-decoration: none;
       @include font( 16px, 22px, 700, #11142D);
