@@ -1,18 +1,19 @@
 .c-base {
   &__wrapper {
+    height: 100vh;
     display: flex;
     &_left {
-      width: 20%;
+      width: 15%;
       float: left;
     }
     &_right {
-      width: 80%;
+      width: 85%;
       float: right;
     }
   }
   &__content {
     &_right {
-      padding: 40px 20px;
+      padding: 100px 20px;
     }
   }
   &__text {

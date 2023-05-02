@@ -2,6 +2,7 @@ import React, {useState,useEffect} from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 import { links } from "../assets/js/dummy";
+import { menus } from "../assets/js/data";
 import logo from '../assets/images/logo-yariga.svg';
 
 function Sidebar() {
