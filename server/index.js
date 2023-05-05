@@ -23,14 +23,22 @@ app.listen(PORT, () => {
 });
 
 app.get('/', (req,res) =>
-  db.query('Welcome, user!')
+  res.send('Welcome, user!')
 )
 
 app.get('/status', (req, res) =>
-  db.query('SELECT * FROM status', (err, res) => {
-    if (res) {
-      res.send(result)
+  db.query('SELECT * FROM status', (err, data) => {
+    if (data) {
+      res.send(data)
     } console.log(err)
   }
   )
+)
+
+app.get('/tasks/todo', (req, res) =>
+  db.query('SELECT * FROM tasks WHERE task_status=1', (err, data) => {
+    if (data) {
+      res.send(data)
+    } console.log(err)
+  })
 )
