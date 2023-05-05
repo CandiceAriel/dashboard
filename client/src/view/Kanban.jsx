@@ -10,7 +10,9 @@ const Kanban = () => {
         <div className="c-kanban__wrapper-content c-kanban__wrapper-content-right">
           <Navbar />
           <div className='c-kanban__wrapper-content-bottom c-kanban__content'>
-            <span>Tasks</span>
+            <div className='c-kanban__wrapper-task'>To Do</div>
+            <div className='c-kanban__wrapper-task'>In Progress</div>
+            <div className='c-kanban__wrapper-task'>Done</div>
           </div>
         </div>
       </div>
