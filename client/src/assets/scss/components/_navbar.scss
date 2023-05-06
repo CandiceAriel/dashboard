@@ -44,7 +44,7 @@
   }
 }
 
-@media (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
   .c-navbar{
     &__wrapper{
       padding: 20px;
