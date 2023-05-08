@@ -19,7 +19,7 @@ class Kanban extends React.Component {
           <Sidebar />
           <div className="c-kanban__wrapper-content c-kanban__wrapper-content-right">
             <Navbar />
-            <div className='c-kanban__wrapper-content-bottom c-kanban__content'>
+            <div className='c-kanban__wrapper-content-bottom c-kanban__board'>
               <Board />
             </div>
           </div>

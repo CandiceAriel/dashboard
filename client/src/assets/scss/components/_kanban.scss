@@ -16,12 +16,15 @@
   }
   &__column{
     width: 235px;
-      padding: 20px;
-      margin-right: 20px;
-      background: #f7f7f7;
-      border-radius: 3px;
+    padding: 20px;
+    margin-right: 20px;
+    background: #f7f7f7;
+    border-radius: 8px;
     &-title{
       font-weight: 700;
+    }
+    &_empty{
+      height: 50px;
     }
   }
   &__card{
