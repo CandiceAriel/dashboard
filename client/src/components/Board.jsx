@@ -45,9 +45,8 @@ export class Board extends Component {
   render() {
     const { status } = this.state;
     return (
-
       status.map((item, index) => (
-        <div key={index} className='c-kanban__wrapper-task'>
+        <div key={index} className='c-kanban__board'>
           <span key={index} className='c-kanban__task-status-title'>{item.status}</span>
           {item.id === 1 &&
             <Task status={1} />
