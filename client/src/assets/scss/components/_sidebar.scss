@@ -67,7 +67,20 @@
   }
 }
 
-@media (max-width: 1440px) {
-  .c-sidebar{
-  }
+@media only screen and (max-width: 1440px) {
+  .c-sidebar {
+      &__wrapper {
+        width: 200px;
+        &:hover {
+          overflow-y: scroll;
+        }
+      }
+  
+      &__menu {
+        width: 150px;
+        &:hover {
+          background-color: rgb(247 247 247 / 1);
+        }
+      }
+    }
 }

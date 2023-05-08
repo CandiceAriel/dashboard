@@ -44,7 +44,7 @@
   }
 }
 
-@media (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .c-navbar{
     &__wrapper{
       padding: 20px;
@@ -68,7 +68,7 @@
         /* Bg color */
         background: #F4F4F4;
         border-radius: 8px;
-        margin-right: 478px;
+        margin-right: 530px;
       }
       &-act-user{
         display: flex;

@@ -1,16 +1,22 @@
 .c-base {
   &__wrapper {
-    height: 100vh;
-    display: flex;
-    &_left {
-      width: 15%;
-      float: left;
+      height: 100vh;
+  
+      &-content {
+        display: flex;
+        flex-direction: column;
+  
+        &-right {
+          margin-left: 288px;
+        }
+  
+        &-bottom {
+          padding-top: 20px;
+          padding-left: 20px;
+          display: flex;
+        }
+      }
     }
-    &_right {
-      width: 85%;
-      float: right;
-    }
-  }
   &__content {
     &_right {
       padding: 100px 20px;
@@ -26,19 +32,26 @@
   }
 }
 
-@media screen and (max-width : 1440px) {
+@media only screen and (max-width : 1440px) {
   .c-base {
     &__wrapper {
-      display: flex;
-      &_left {
-        width: 20%;
-        float: left;
+        height: 100vh;
+    
+        &-content {
+          display: flex;
+          flex-direction: column;
+    
+          &-right {
+            margin-left: 238px;
+          }
+    
+          &-bottom {
+            padding-top: 20px;
+            padding-left: 20px;
+            display: flex;
+          }
+        }
       }
-      &_right {
-        width: 80%;
-        float: right;
-      }
-    }
     &__content {
       &_right {
         width: 1118px;
