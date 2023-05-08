@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-class Task extends Component {
+class Card extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,9 +30,9 @@ class Task extends Component {
     if (this.props.status === 1) {
       return (
         tasksToDo.map((task, index) => (
-          <div key={index} className='c-kanban__task'>
+          <div key={index} className='c-kanban__card'>
             <span>{task.title}</span>
-            <div className='c-kanban__task-status-btn c-kanban__task-status-btn_todo'><span>To Do</span></div>
+            <div className='c-kanban__card-status-btn c-kanban__card-status-btn_todo'><span>To Do</span></div>
           </div>
         ))
       )
@@ -41,4 +41,4 @@ class Task extends Component {
   }
 }
 
-export default Task;
+export default Card;

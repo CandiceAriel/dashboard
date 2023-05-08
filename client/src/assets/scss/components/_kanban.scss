@@ -5,7 +5,7 @@
       display: flex;
       flex-direction: column;
       &-right {
-        margin-left: 238px;
+        margin-left: 288px;
       }
       &-bottom {
         padding-top: 20px;
@@ -14,20 +14,20 @@
       }
     }
   }
-  &__board{
+  &__column{
     width: 235px;
       padding: 20px;
       margin-right: 20px;
       background: #f7f7f7;
       border-radius: 3px;
+    &-title{
+      font-weight: 700;
+    }
   }
-  &__task{
+  &__card{
     padding: 10px;
     margin-top: 20px;
     background-color: #FFFFFF;
-    &-status-title{
-      font-weight: 700;
-    }
     &-status-btn{
       width: 50%;
       border-radius: 2px;
@@ -44,5 +44,12 @@
 
 @media only screen and (max-width: 1440px) {
   .c-kanban{
+    &__wrapper {
+      &-content{
+        &-right {
+          margin-left: 238px;
+        }
+      }
+    }
   }
 }

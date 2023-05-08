@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-import Task from './Task';
+import Card from './Card';
 
 export class Board extends Component {
   constructor(props) {
@@ -46,10 +46,10 @@ export class Board extends Component {
     const { status } = this.state;
     return (
       status.map((item, index) => (
-        <div key={index} className='c-kanban__board'>
-          <span key={index} className='c-kanban__task-status-title'>{item.status}</span>
+        <div key={index} className='c-kanban__column'>
+          <span key={index} className='c-kanban__column-title'>{item.status}</span>
           {item.id === 1 &&
-            <Task status={1} />
+            <Card status={1} />
           }
         </div>
       ))

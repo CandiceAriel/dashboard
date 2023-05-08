@@ -3,8 +3,7 @@ import axios from 'axios';
 
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
-import Task from '../components/Task';
-import Board from '../components/Board';
+import Board from '../components/Kanban/Board';
 
 class Kanban extends React.Component {
   constructor(props) {
