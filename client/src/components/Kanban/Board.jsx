@@ -63,38 +63,41 @@ export class Board extends Component {
 
     return (
       status.map((item, index) => {
-        if (item.id === 1) {
-          return (
-            <div key={index} className='c-kanban__column'>
-              <span key={index} className='c-kanban__column-title'>{item.status}</span>
-              {tasks.filter(t => t.task_status === 1).map((t, i) => (
-                <Card status={1} title={t.title} key={t.id} />
-              ))}
-            </div>
-          )
-        } else if (item.id === 2) {
-          return (
-            <div key={index} className='c-kanban__column'>
-              <span key={index} className='c-kanban__column-title'>{item.status}</span>
-              {tasks.filter(t => t.task_status === 2).map((t, i) => (
-                <Card status={2} title={t.title} key={t.id} />
-              ))}
-            </div>
-          )
-        }
-        else if (item.id === 3) {
-          return (
-            <div key={index} className='c-kanban__column'>
-              <span key={index} className='c-kanban__column-title'>{item.status}</span>
-              { tasks.filter(t => t.task_status === 3).map((t, i) => (
-                <Card status={3} title={t.title} key={t.id} />
-              ))}
-            </div>
-          )
-        }
+        // if (item.id === 1) {
+        //   return (
+        //     <div key={index} className='c-kanban__column'>
+        //       <span key={index} className='c-kanban__column-title'>{item.status}</span>
+        //       {tasks.filter(t => t.task_status === 1).map((t, i) => (
+        //         <Card status={1} title={t.title} key={t.id} />
+        //       ))}
+        //     </div>
+        //   )
+        // } else if (item.id === 2) {
+        //   return (
+        //     <div key={index} className='c-kanban__column'>
+        //       <span key={index} className='c-kanban__column-title'>{item.status}</span>
+        //       {tasks.filter(t => t.task_status === 2).map((t, i) => (
+        //         <Card status={2} title={t.title} key={t.id} />
+        //       ))}
+        //     </div>
+        //   )
+        // }
+        // else if (item.id === 3) {
+        //   return (
+        //     <div key={index} className='c-kanban__column'>
+        //       <span key={index} className='c-kanban__column-title'>{item.status}</span>
+        //       { tasks.filter(t => t.task_status === 3).map((t, i) => (
+        //         <Card status={3} title={t.title} key={t.id} />
+        //       ))}
+        //     </div>
+        //   )
+        // }
         return (
-          <div key={index} className='c-kanban__column c-kanban__column_empty'>
+          <div key={index} className='c-kanban__column'>
             <span key={index} className='c-kanban__column-title'>{item.status}</span>
+            { tasks.filter(t => t.task_status === item.id).map((t, i) => (
+                <Card status={item.id} title={t.title} key={t.id} />
+            ))}
           </div>
         )
       })
