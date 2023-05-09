@@ -50,13 +50,6 @@ export class Board extends Component {
     return this.state.toDo;
   }
 
-  filterData(){
-    const { tasks } = this.state;
-    this.state.inProgress = tasks.filter(function(task) {
-      return task.task_status == 2;
-    });
-  }
-
   componentDidMount() {
     this.fetchTaskStatus();
     this.fetchTasks();
@@ -65,77 +58,44 @@ export class Board extends Component {
 
   render() {
     const { status } = this.state;
-    const { toDo } = this.state;
+    const { tasks } = this.state;
     const { inProgress } = this.state;
 
     return (
-      // status.map((item, index) => (
-      //   item.id === 1 && toDo.length > 0 ? 
-      //   <div key={index} className='c-kanban__column'>
-      //     <span key={index} className='c-kanban__column-title'>{item.status}</span>
-      //     {(function() {
-      //       if (item.id === 1) {
-      //         return toDo.map((t, i) => (
-      //           <Card status={1} title={t.title} key={t.id}/>  
-      //         ))
-      //       }
-      //     })()}
-      //   </div> 
-      //   : item.id === 2 && inProgress.length > 0 ? 
-      //   <div key={index} className='c-kanban__column'>
-      //     <span key={index} className='c-kanban__column-title'>{item.status}</span>
-      //     {(function() {
-      //       if (item.id === 1) {
-      //         return toDo.map((t, i) => (
-      //           <Card status={1} title={t.title} key={t.id}/>  
-      //         ))
-      //       }
-      //     })()}
-      //   </div> 
-      //   :
-      //   <div key={index} className='c-kanban__column c-kanban__column_empty'>
-      //     <span key={index} className='c-kanban__column-title'>{item.status}</span>
-      //     {(function() {
-      //       if (item.id === 1) {
-      //         return toDo.map((t, i) => (
-      //           <Card status={1} title={t.title} key={t.id}/>  
-      //         ))
-      //       }
-      //     })()}
-      //   </div>
-      // ))
       status.map((item, index) => {
-        if(item.id === 1 && toDo.length > 0){
+        if (item.id === 1) {
           return (
             <div key={index} className='c-kanban__column'>
               <span key={index} className='c-kanban__column-title'>{item.status}</span>
-              {(function() {
-                if (item.id === 1) {
-                  return toDo.map((t, i) => (
-                    <Card status={1} title={t.title} key={t.id}/>  
-                  ))
-                }
-              })()}
-            </div> 
+              {tasks.filter(t => t.task_status === 1).map((t, i) => (
+                <Card status={1} title={t.title} key={t.id} />
+              ))}
+            </div>
           )
-        } else if(item.id === 2 && inProgress.length > 0){
+        } else if (item.id === 2) {
           return (
             <div key={index} className='c-kanban__column'>
               <span key={index} className='c-kanban__column-title'>{item.status}</span>
-              {(function() {
-                if (item.id === 1) {
-                  return toDo.map((t, i) => (
-                    <Card status={1} title={t.title} key={t.id}/>  
-                  ))
-                }
-              })()}
-            </div> 
+              {tasks.filter(t => t.task_status === 2).map((t, i) => (
+                <Card status={2} title={t.title} key={t.id} />
+              ))}
+            </div>
+          )
+        }
+        else if (item.id === 3) {
+          return (
+            <div key={index} className='c-kanban__column'>
+              <span key={index} className='c-kanban__column-title'>{item.status}</span>
+              { tasks.filter(t => t.task_status === 3).map((t, i) => (
+                <Card status={3} title={t.title} key={t.id} />
+              ))}
+            </div>
           )
         }
         return (
           <div key={index} className='c-kanban__column c-kanban__column_empty'>
             <span key={index} className='c-kanban__column-title'>{item.status}</span>
-          </div> 
+          </div>
         )
       })
     )

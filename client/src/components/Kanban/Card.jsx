@@ -43,32 +43,25 @@ class Card extends Component {
   }
 
   render() {
-    return(
-      <div key={this.props.id} className='c-kanban__card'>
+    const { tasksToDo } = this.state;
+    const { tasksInProgress } = this.state;
+
+    if (this.props.status === 1) {
+      return (
+          <div className='c-kanban__card'>
             <span>{this.props.title}</span>
             <div className='c-kanban__card-status-btn c-kanban__card-status-btn_todo'><span>To Do</span></div>
           </div>
-    )
-    // if (this.props.status === 1) {
-    //   return (
-    //     tasksToDo.map((task, index) => (
-    //       <div key={index} className='c-kanban__card'>
-    //         <span>{this.props.title}</span>
-    //         <div className='c-kanban__card-status-btn c-kanban__card-status-btn_todo'><span>To Do</span></div>
-    //       </div>
-    //     ))
-    //   )
-    // }
-    // else if (this.props.status === 2){
-    //   return (
-    //     tasksInProgress.map((task, index) => (
-    //       <div key={index} className='c-kanban__card'>
-    //         <span>{this.props.title}</span>
-    //         <div className='c-kanban__card-status-btn c-kanban__card-status-btn_todo'><span>In Progress</span></div>
-    //       </div>
-    //     ))
-    //   )
-    // } else return <div></div>
+      )
+    }
+    else if (this.props.status === 2){
+      return (
+        <div className='c-kanban__card'>
+          <span>{this.props.title}</span>
+          <div className='c-kanban__card-status-btn c-kanban__card-status-btn_todo'><span>In Progress</span></div>
+        </div>
+      )
+    } else return <div></div>
   }
 }
 
