@@ -1,9 +1,8 @@
 import React, {useState,useEffect} from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
-import { links } from "../assets/js/dummy";
-import { menus } from "../assets/js/data";
 import logo from '../assets/images/logo-yariga.svg';
+import kanbanIcon from '../assets/images/kanban_icon.svg';
 
 function Sidebar() {
   const location = useLocation();
@@ -32,13 +31,13 @@ function Sidebar() {
 
   return (
     <div className='c-sidebar__wrapper'>
-      <div className='c-sidebar__logo'><img src={logo} alt=''/><span className='c-sidebar__logo-text'>Yariga</span></div>
+      <div className='c-sidebar__logo'><img src={logo} alt=''/></div>
       <NavLink
         to={`/kanban`}
         onClick={() => navigate('kanban')}
         className={`c-sidebar__menu ${active === 'kanban' ? 'c-sidebar__menu-sub_active' : ''}`}
       >
-        <span>Kanban</span>
+        <img src={kanbanIcon}></img>
       </NavLink>
     </div>
   )

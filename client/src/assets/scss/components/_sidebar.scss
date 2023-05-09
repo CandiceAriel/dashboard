@@ -17,11 +17,11 @@
   }
   &__logo{
     display: flex;
+    justify-content: center;
     margin-bottom: 45px;
     img{
       width: 35px;
       height: 39px;
-      margin-right: 12px;
     }
     &-text{
       @include font( 25px, 34.5px, 700, #11142D)
@@ -36,7 +36,7 @@
     text-decoration: none;
     margin-bottom: 5px;
     border-radius: 12px;
-    padding: 15px 20px;
+    padding: 15px;
     width: 200px;
     &:hover{
       background-color: rgb(247 247 247 / 1);
@@ -70,14 +70,14 @@
 @media only screen and (max-width: 1440px) {
   .c-sidebar {
       &__wrapper {
-        width: 200px;
+        width: 57px;
         &:hover {
           overflow-y: scroll;
         }
       }
   
       &__menu {
-        width: 150px;
+        width: 26px;
         &:hover {
           background-color: rgb(247 247 247 / 1);
         }
