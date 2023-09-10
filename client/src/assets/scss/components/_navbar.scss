@@ -2,8 +2,10 @@
   &__wrapper{
     padding: 20px;
     display: flex;
+    justify-content: space-between;
     background: #FCFCFC;
     float: right;
+
   }
   &__content{
     &-search{
@@ -44,10 +46,10 @@
   }
 }
 
-@media only screen and (max-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .c-navbar{
     &__wrapper{
-      padding: 20px;
+      padding: 15px;
       display: flex;
     }
     &__content{
@@ -68,7 +70,7 @@
         /* Bg color */
         background: #F4F4F4;
         border-radius: 8px;
-        margin-right: 530px;
+        margin-right: 629px;
       }
       &-act-user{
         display: flex;

@@ -6,7 +6,7 @@
       flex-direction: column;
       &-right {
         margin-left: 288px;
-        background-color: #f3f5ff;
+        background-color: #FFFFFF;
         height: 100vh;
       }
       &-bottom {
@@ -33,6 +33,7 @@
     margin-top: 10px;
     background-color: #ffffff;
     border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     &-status-btn{
       width: 50%;
       border-radius: 2px;
@@ -47,7 +48,7 @@
   }
 }
 
-@media only screen and (max-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .c-kanban{
     &__wrapper {
       &-content{

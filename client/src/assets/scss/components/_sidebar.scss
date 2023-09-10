@@ -1,5 +1,5 @@
-.c-sidebar{
-  &__wrapper{
+.c-sidebar {
+  &__wrapper {
     width: 250px;
     height: 100vh;
     background: #FCFCFC;
@@ -7,27 +7,33 @@
     position: fixed;
     overflow: hidden;
     z-index: -1;
-    &-sub-menu{
+
+    &-sub-menu {
       display: flex;
       flex-direction: column;
     }
-    &:hover{
+
+    &:hover {
       overflow-y: scroll;
     }
   }
-  &__logo{
+
+  &__logo {
     display: flex;
     justify-content: center;
     margin-bottom: 45px;
-    img{
+
+    img {
       width: 35px;
       height: 39px;
     }
-    &-text{
-      @include font( 25px, 34.5px, 700, #11142D)
+
+    &-text {
+      @include font(25px, 34.5px, 700, #11142D)
     }
   }
-  &__menu{
+
+  &__menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,13 +44,15 @@
     border-radius: 12px;
     padding: 15px;
     width: 200px;
-    &:hover{
+
+    &:hover {
       background-color: rgb(247 247 247 / 1);
     }
-    &-sub{
+
+    &-sub {
       text-decoration: none;
-      @include font( 16px, 22px, 700, #11142D);
-      display: flex;  
+      @include font(16px, 22px, 700, #11142D);
+      display: flex;
       align-items: center;
       padding: 16.5px 0;
       width: 85%;
@@ -52,35 +60,42 @@
       padding-left: 26px;
       margin-left: 10px;
       margin-bottom: 10px;
-      img, svg{
+
+      img,
+      svg {
         margin-right: 13px;
       }
-      &_active{
+
+      &_active {
         /* Primary color */
-        background-color: #475BE8!important;
-        @include font( 16px, 22px, 700, #FCFCFC);
+        background-color: #2735621c !important;
+        @include font(16px, 22px, 700, #FCFCFC);
       }
-      &:hover{
+
+      &:hover {
         background-color: rgb(247 247 247 / 1);
       }
     }
   }
 }
 
-@media only screen and (max-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .c-sidebar {
-      &__wrapper {
-        width: 57px;
-        &:hover {
-          overflow-y: scroll;
-        }
+    &__wrapper {
+      width: 57px;
+      &:hover {
+        overflow-y: scroll;
       }
-  
-      &__menu {
-        width: 26px;
-        &:hover {
-          background-color: rgb(247 247 247 / 1);
-        }
+    }
+
+    &__menu {
+      width: 26px;
+      &:hover {
+        background-color: rgb(247 247 247 / 1);
       }
+    }
+    &__logo {
+      margin-bottom: 26px;
+    }
   }
 }
