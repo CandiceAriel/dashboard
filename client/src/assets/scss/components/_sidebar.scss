@@ -6,7 +6,6 @@
     padding: 16px 19px;
     position: fixed;
     overflow: hidden;
-    z-index: -1;
 
     &-sub-menu {
       display: flex;
@@ -22,14 +21,16 @@
     display: flex;
     justify-content: center;
     margin-bottom: 45px;
-
+    
     img {
       width: 35px;
       height: 39px;
     }
-
     &-text {
       @include font(25px, 34.5px, 700, #11142D)
+    }
+    &:hover{
+      cursor: pointer;
     }
   }
 
@@ -47,6 +48,7 @@
 
     &:hover {
       background-color: rgb(247 247 247 / 1);
+      cursor: pointer;
     }
 
     &-sub {

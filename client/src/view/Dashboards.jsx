@@ -21,7 +21,7 @@ class Dashboards extends Component {
           <Sidebar />
           <div className="c-base__wrapper c-base__wrapper-content-right">
             <Navbar />
-            <div className='c-dashboard__wrapper-content-bottom'>
+            <div className='c-dashboard__content'>
                 <h3>All Tasks</h3>
                 <TasksTable />
             </div>

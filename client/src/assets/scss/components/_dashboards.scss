@@ -1,19 +1,20 @@
 .c-dashboard {
   &__wrapper {
     height: 100vh;
-    &-content{
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    &-right {
+      margin-left: 95px;
+      background-color: #FFFFFF;
+      height: 100vh;
+    }
+    &-bottom {
+      padding-top: 20px;
+      padding-left: 20px;
       display: flex;
-      flex-direction: column;
-      &-right {
-        margin-left: 95px;
-        background-color: #FFFFFF;
-        height: 100vh;
-      }
-      &-bottom {
-        padding-top: 20px;
-        padding-left: 20px;
-        display: flex;
-      }
     }
   }
   &__column{
@@ -27,6 +28,14 @@
     &_empty{
       height: 50px;
     }
+  }
+
+  &__task{
+    border-bottom: 2px solid #dbdbdb;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 2px;
+    margin-bottom: 10px;
   }
 }
 

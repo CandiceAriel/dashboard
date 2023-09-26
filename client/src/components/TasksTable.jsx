@@ -14,6 +14,7 @@ export class TasksTable extends Component {
       .then(response => {
         const data = response.data;
         this.setState({ tasks: data });
+        console.log(data);
       })
       .catch(error => {
         console.log(error);
@@ -30,9 +31,9 @@ export class TasksTable extends Component {
     return (
       tasks.map((item, index) => {
         return (
-          <div key={index} className=''>
-            <span key={index} className='c-kanban__column-title'>{item.title}</span>
-            <span key={index} className='c-kanban__column-title'>{item.status}</span>
+          <div key={index} className='c-dashboard__task'>
+            <span key={index} className='c-dashboard__task-title'>{item.title}</span>
+            <span className='c-dashboard__task-status'>{item.task_status}</span>
           </div>
         )
       })
