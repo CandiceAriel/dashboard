@@ -1,19 +1,34 @@
+import React, {Component} from 'react';
+import axios from 'axios';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
+import TasksTable from '../components/TasksTable'
 
-function Dashboards() {
-  return (
-    <div className="c-dashboards__wrapper">
-      <div className="c-base__wrapper-content">
-        <Sidebar />
-        <div className="c-base__wrapper-content c-base__wrapper-content-right">
-          <Navbar />
-          <div className='c-base__wrapper-content-bottom c-base__content'>
+class Dashboards extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+    };
+  }
+
+  componentDidMount() {
+  }
+
+  render() {
+
+    return (
+      <div className="c-base__view">
+          <Sidebar />
+          <div className="c-base__wrapper c-base__wrapper-content-right">
+            <Navbar />
+            <div className='c-dashboard__wrapper-content-bottom'>
+                <h3>All Tasks</h3>
+                <TasksTable />
+            </div>
           </div>
-        </div>
       </div>
-    </div>
-  );
+    )
+  }
 }
 
 export default Dashboards;

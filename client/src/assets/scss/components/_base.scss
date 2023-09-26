@@ -1,13 +1,12 @@
 .c-base {
   &__wrapper {
       height: 100vh;
+      display: flex;
+      flex-direction: column;
   
       &-content {
-        display: flex;
-        flex-direction: column;
-  
         &-right {
-          margin-left: 288px;
+          margin-left: 95px;
         }
   
         &-bottom {
@@ -27,7 +26,7 @@
       font-weight: 700;
     }
   }
-  &__sub-view{
+  &__view{
     height: 100vh;
   }
 }
@@ -36,13 +35,13 @@
   .c-base {
     &__wrapper {
         height: 100vh;
-    
+        display: flex;
+        flex-direction: column;
+        
         &-content {
-          display: flex;
-          flex-direction: column;
-    
+        
           &-right {
-            margin-left: 94px;
+            margin-left: 95px;
           }
     
           &-bottom {

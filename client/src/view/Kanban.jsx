@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 import axios from 'axios';
 
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Board from '../components/Kanban/Board';
 
-class Kanban extends React.Component {
+class Kanban extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,7 +14,7 @@ class Kanban extends React.Component {
 
   render() {
     return (
-      <div className="c-kanban__wrapper c-base__sub-view">
+      <div className="c-kanban__wrapper c-base__view">
         <div className="c-kanban__wrapper-content">
           <Sidebar />
           <div className="c-kanban__wrapper-content c-kanban__wrapper-content-right">
